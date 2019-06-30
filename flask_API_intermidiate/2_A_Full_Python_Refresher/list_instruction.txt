@@ -1,0 +1,20 @@
+people = input("Enter the names of peoples you know: ")
+people_list = people.split(",")
+
+people_without_spaces = []
+for person in person_list:
+  people_without_spaces.append(person.strip())
+
+
+##################################################################
+people = input("Enter the names of peoples you know: ")
+people_list = people.split(",")
+
+people_without_spaces = [person.strip() for person in people_list]
+
+####################################################################
+people = input("Enter the names of peoples you know: ")
+
+people_without_spaces = [person.strip() for person in people.split(",")]
+
+###########################################################################
