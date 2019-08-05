@@ -4,7 +4,7 @@ from flask_jwt import JWT
 
 from security import authenticate, identity
 from resources.user import UserRegister
-from resources.item import Item, ItemList
+# from resources.item import Item, ItemList
 from resources.store import Store, StoreList
 
 app = Flask(__name__)
@@ -30,11 +30,11 @@ api.add_resource(StoreList, "/employees/")
 # api.add_resource(Item, "/item/<string:name>") ### http://127.0.0.1:5000/student/Shifullah
 # api.add_resource(ItemList, "/items/")
 
-api.add_resource(UserRegister, "/register/")
+# api.add_resource(UserRegister, "/register/")
 
 
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
     app.debug=True
-    app.run()	#host="10.11.200.39"
+    app.run()   # host="10.11.200.39"

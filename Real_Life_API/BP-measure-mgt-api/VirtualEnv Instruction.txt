@@ -36,15 +36,3 @@ Flask-JWT: ## JWT = Json Web Token
 cx_Oracle:
 ==========
 	10. virtual\Scripts\pip install --upgrade cx_Oracle
-
-Flask-Admin:
-============
-	11. pip install --upgrade Flask-Admin
-
-
-
-
-
-
-
-
