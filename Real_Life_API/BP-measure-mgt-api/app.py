@@ -24,8 +24,8 @@ def create_tables():
 
 jwt = JWT(app, authenticate, identity) # /auth
 
-api.add_resource(Store, "/employee/name=<string:name>&date=<string:date>") #currency_code= #&date=<string:date>
-api.add_resource(StoreList, "/employees/")
+api.add_resource(Store, "/bp/<string:name>&<string:date>") #currency_code= #&date=<string:date>
+api.add_resource(StoreList, "/bps/")
 
 # api.add_resource(Item, "/item/<string:name>") ### http://127.0.0.1:5000/student/Shifullah
 # api.add_resource(ItemList, "/items/")
